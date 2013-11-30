@@ -2,3 +2,6 @@
     width: 500px;
     height: 500px;
 }
+#map-canvas img {
+  max-width: none;
+}
