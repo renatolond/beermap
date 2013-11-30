@@ -10,8 +10,8 @@
 </body>
 
 <template name="page">
-  {{#if showCreateDialog}}
-    {{> createDialog}}
+  {{#if showAddVenue}}
+    {{> addVenue}}
   {{/if}}
 
   {{#if showInviteDialog}}
@@ -39,6 +39,7 @@
             {{> map}}
           </div>
           <div class="span4">
+	    <a href="#" class="btn btnAddVenue">Add Venue</a>
           </div>
         </div>
       </div>

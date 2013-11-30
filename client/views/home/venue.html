@@ -1,0 +1,23 @@
+<template name="addVenue">
+  <div class="mask"> </div>
+  <div class="modal">
+    <div class="modal-header">
+      <button type="button" class="close cancel">&times;</button>
+      <h3>Add venue</h3>
+    </div>
+
+    <div class="modal-body">
+      {{#if error}}
+        <div class="alert alert-error">{{error}}</div>
+      {{/if}}
+
+      <label>{{venueName}}</label>
+      <input type="text" class="venue span5">
+    </div>
+
+    <div class="modal-footer">
+      <a href="#" class="btn btnAddVenueCancel">Cancel</a>
+      <a href="#" class="btn btn-primary btnAddVenueConfirm">Confirm</a>
+    </div>
+  </div>
+</template>
