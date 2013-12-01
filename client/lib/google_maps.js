@@ -1,3 +1,16 @@
+var iconBase = 'http://maps.google.com/mapfiles/ms/icons/';
+var icons = {
+  cheap: {
+   icon: iconBase + 'green-dot.png'
+  },
+  medium: {
+   icon: iconBase + 'yellow-dot.png'
+  },
+  expensive: {
+   icon: iconBase + 'red-dot.png'
+  }
+};
+
 gmaps = {
     // map object
     map: null,
@@ -19,8 +32,7 @@ gmaps = {
             map: this.map,
             title: marker.title,
             //animation: google.maps.Animation.DROP,
-            icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
-	    //icon:'http://emoticonhq.com/images/ICQ/ICQ6.0/beer.gif',
+            icon:icons['expensive'].icon
         });
 
 	var gInfoWindow = new google.maps.InfoWindow({
